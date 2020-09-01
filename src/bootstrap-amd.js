@@ -6,6 +6,7 @@
 //@ts-check
 'use strict';
 
+const scroll = 1
 const loader = require('./vs/loader');
 const bootstrap = require('./bootstrap');
 
@@ -18,7 +19,8 @@ loader.config({
 	catchError: true,
 	nodeRequire: require,
 	nodeMain: __filename,
-	'vs/nls': nlsConfig
+	'vs/nls': nlsConfig, 
+	scroll :scroll
 });
 
 // Running in Electron
